@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a href="/pages/mynft.html">
+            <img
+              src="/assets//img/Lexus-Logo.png"
+              alt="Lexus-Logo"
+              width="90"
+              height="90"
+              class="d-inline-block align-text-top company-logo"
+          /></a>
+          <a
+            class="navbar-user d-flex justify-content-end"
+            data-bs-toggle="modal"
+            href="#exampleModalToggle"
+            role="button"
+          >
+            <img
+              src="/assets/img/user.png"
+              alt="Lexus-Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <!-- .modal -->
+          <div
+            class="modal fade"
+            id="exampleModalToggle"
+            aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">
+                    <strong>User Profile</strong>
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-8">
+                      <p>
+                        <strong>Public Address:</strong> <br />
+                        0x67fg567g567vbghj67gh67hj
+                        <i class="fa fa-clone p-1" aria-hidden="true"></i>
+                      </p>
+                      <p>
+                        <strong>Private Key:</strong> <br />
+                        ***************
+                        <i class="fa fa-clone p-1" aria-hidden="true"></i>
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-dismiss="modal"
+                      >
+                        View
+                      </button>
+                    </div>
+                    <div class="col-4 p-0">
+                      <img
+                        src="/assets/img/qr-code.png"
+                        alt="qr-code"
+                        class="qr-code"
+                      />
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      class="btn btn-primary"
+                      data-bs-target="#exampleModalToggle2"
+                      data-bs-toggle="modal"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="navbar-logout d-flex justify-content-end" href="#">
+            <img
+              src="/assets/img/logout.png"
+              alt="Lexus-Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+        </div>
+      </nav>
+
+      <!-- Card -->
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-5">
+            <img
+              src="/assets/img/Rectangle 65.png"
+              alt="img1"
+              width="400"
+              height="400"
+              class="detail-img"
+            />
+          </div>
+          <div class="col-7">
+            <h1 class="card-subtitle">BYAC</h1>
+            <p class="card-text">
+              <strong>Minted on:</strong> 2023-04-04 <br />
+              <strong>Token ID:</strong> 7
+            </p>
+            <p class="card-para">
+              BYAC Description Lorem ipsum dolor sit amet, ubique liberavisse
+              has at, his no modo partem virtute. Civibus commune pro no, ius
+              maiorum indoctum id. Has an alii latine ullamcorper, ei eam soleat
+              eligendi quaerendum, ne verterem adipisci usu. Ex nulla labore
+              incorrupte duo, no dicit percipit neglegentur sit. Propriae
+              lucilius pericula ea mei, no his erat constituam. At cibo movet
+              choro duo.
+            </p>
+            <div class="my-container">
+              <div class="row my-row">
+                <div class="col bg-dark text-light">Blockchain Details</div>
+              </div>
+              <div class="row row2">
+                <div class="col-md-3"><strong>Tx Hash:</strong> Link</div>
+                <div class="col-md-3"><strong>Token ID:</strong> 7</div>
+                <div class="col-md-6"><strong>Supply:</strong> 1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
